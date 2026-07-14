@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI工具导航 & 行业解决方案 | 小帅在创作</title>
+    <meta name="description" content="精选AI工具导航，为小微企业提供AI自动化解决方案。探索AI工具、工作流、模板，让AI为你的业务加速。">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text: #1e293b;
+            --text-light: #64748b;
+            --border: #e2e8f0;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -4px rgba(0, 0, 0, 0.07);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHein', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        header {
+            background: linear-gradient(135deg, var(--primary) 0%, #0ea5e9 100%);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 800;
+        }
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        main { padding: 40px 0; }
+        .section { margin-bottom: 60px; }
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        .section-header h2 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--text);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .section-header h2::before {
+            content: '';
+            display: inline-block;
+            width: 4px;
+            height: 30px;
+            background: var(--primary);
+            border-radius: 2px;
+        }
+        .section-header a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        .section-header a:hover { color: var(--primary-dark); }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: var(--shadow);
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: 1px solid var(--border);
+        }
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+        }
+        .card-icon {
+            font-size: 2rem;
+            margin-bottom: 12px;
+        }
+        .card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+            color: var(--text);
+        }
+        .card p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            margin-bottom: 16px;
+        }
+        .tag {
+            display: inline-block;
+            padding: 4px 10px;
+            background: #eff4ff;
+            color: var(--primary);
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-right: 6px;
+            margin-bottom: 6px;
+        }
+        .card-actions {
+            display: flex;
+            gap: 10px;
+            margin-top: 16px;
+        }
+        .btn {
+            padding: 8px 16px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: background-color 0.3s;
+        }
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+        }
+        .btn-primary:hover {
+            background: var(--primary-dark);
+        }
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+        }
+        .btn-outline:hover {
+            background: var(--primary);
+            color: white;
+        }
+        footer {
+            background: var(--text);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+        footer a {
+            color: #93c5fd;
+        }
+        .highlight { color: var(--primary); }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🚀 AI工具导航 & 行业解决方案</h1>
+            <p>精选AI工具 · 小微企业自动化方案 · 让AI为你的业务加速</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- AI工具导航 -->
+        <section class="section">
+            <div class="section-header">
+                <h2>🔥 AI工具导航</h2>
+                <a href="#more-tools">查看更多 →</a>
+            </div>
+            <div class="grid">
+                <div class="card">
+                    <div class="card-icon">🤖</div>
+                    <h3>AI写作助手</h3>
+                    <p>高效内容生成、文案撰写、SEO优化。推荐：ChatGPT、Claude、Gemini。</p>
+                    <span class="tag">免费</span>
+                    <span class="tag">内容创作</span>
+                    <div class="card-actions">
+                        <a href="https://chat.openai.com" class="btn btn-primary" target="_blank" rel="noopener">使用工具</a>
+                        <a href="https://gumroad.com" class="btn btn-outline" target="_blank">获取模板</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🎨</div>
+                    <h3>AI图像生成</h3>
+                    <p>Midjourney、DALL·E、Stable Diffusion。从概念到成品，只需几步。</p>
+                    <span class="tag">设计</span>
+                    <span class="tag">图像生成</span>
+                    <div class="card-actions">
+                        <a href="https://midjourney.com" class="btn btn-primary" target="_blank" rel="noopener">访问网站</a>
+                        <a href="https://afdian.com" class="btn btn-outline" target="_blank">查看作品</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-icon">📊</div>
+                    <h3>AI数据分析</h3>
+                    <p>Tableau、Power BI、ChatGPT数据分析。让数据驱动业务决策。</p>
+                    <span class="tag">数据分析</span>
+                    <span class="tag">可视化</span>
+                    <div class="card-actions">
+                        <a href="https://www.tableau.com" class="btn btn-primary" target="_blank" rel="noopener">开始分析</a>
+                        <a href="https://gumroad.com" class="btn btn-outline" target="_blank">数据模板</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🎬</div>
+                    <h3>AI视频编辑</h3>
+                    <p>剪映、Descript、Runway。快速剪辑、特效、字幕生成。</p>
+                    <span class="tag">视频</span>
+                    <span class="tag">剪辑</span>
+                    <div class="card-actions">
+                        <a href="https://www.jianying.com" class="btn btn-primary" target="_blank" rel="noopener">开始创作</a>
+                        <a href="https://gumroad.com" class="btn btn-outline" target="_blank">工作流模板</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 行业解决方案 -->
+        <section class="section">
+            <div class="section-header">
+                <h2>🏢 行业解决方案</h2>
+                <a href="#solutions">查看方案 →</a>
+            </div>
+            <div class="grid">
+                <div class="card">
+                    <div class="card-icon">🏪</div>
+                    <h3>小微企业自动化</h3>
+                    <p>用AI自动化处理订单、客户管理、库存管理。省人省力，提升效率。</p>
+                    <span class="tag">自动化</span>
+                    <span class="tag">CRM</span>
+                    <div class="card-actions">
+                        <a href="#solutions" class="btn btn-primary">查看方案</a>
+                        <a href="https://afdian.com" class="btn btn-outline" target="_blank">获取模板</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-icon">📦</div>
+                    <h3>电商运营自动化</h3>
+                    <p>商品上架、标题优化、竞品监控、数据报告。让AI帮你管理店铺。</p>
+                    <span class="tag">电商</span>
+                    <span class="tag">运营</span>
+                    <div class="card-actions">
+                        <a href="#solutions" class="btn btn-primary">查看方案</a>
+                        <a href="https://gumroad.com" class="btn btn-outline" target="_blank">工作流模板</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-icon">📊</div>
+                    <h3>内容创作自动化</h3>
+                    <p>多平台内容分发、SEO优化、数据报告生成。批量生产，高效运营。</p>
+                    <span class="tag">内容</span>
+                    <span class="tag">SEO</span>
+                    <div class="card-actions">
+                        <a href="#solutions" class="btn btn-primary">查看方案</a>
+                        <a href="https://afdian.com" class="btn btn-outline" target="_blank">数字产品</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🤝</div>
+                    <h3>客户服务自动化</h3>
+                    <p>AI客服、工单处理、知识库搭建。7×24小时服务，降低人力成本。</p>
+                    <span class="tag">客服</span>
+                    <span class="tag">自动化</span>
+                    <div class="card-actions">
+                        <a href="#solutions" class="btn btn-primary">查看方案</a>
+                        <a href="https://gumroad.com" class="btn btn-outline" target="_blank">客服模板</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 解决方案详情 -->
+        <section id="solutions" class="section">
+            <div class="section-header">
+                <h2>📋 详细解决方案</h2>
+            </div>
+            <div class="grid">
+                <div class="card">
+                    <div class="card-icon">📈</div>
+                    <h3>AI工作流模板</h3>
+                    <p>预配置的AI工作流，开箱即用。包括：数据收集、内容生成、报告生成等。</p>
+                    <span class="tag">模板</span>
+                    <span class="tag">自动化</span>
+                    <div class="card-actions">
+                        <a href="https://gumroad.com" class="btn btn-primary" target="_blank" rel="noopener">购买模板</a>
+                        <a href="https://afdian.com" class="btn btn-outline" target="_blank" rel="noopener">预览作品</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🎓</div>
+                    <h3>AI实战教程</h3>
+                    <p>从入门到精通的AI教程，包含案例、实操、视频。适合零基础学习者。</p>
+                    <span class="tag">教程</span>
+                    <span class="tag">实战</span>
+                    <div class="card-actions">
+                        <a href="https://afdian.com" class="btn btn-primary" target="_blank" rel="noopener">购买课程</a>
+                        <a href="https://afdian.com" class="btn btn-outline" target="_blank" rel="noopener">查看目录</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-icon">💼</div>
+                    <h3>企业定制方案</h3>
+                    <p>根据企业需求定制AI解决方案，包含：流程设计、系统集成、培训支持。</p>
+                    <span class="tag">定制</span>
+                    <span class="tag">企业</span>
+                    <div class="card-actions">
+                        <a href="mailto:hello@xiaoshuai.com" class="btn btn-primary">联系我们</a>
+                        <a href="https://afdian.com" class="btn btn-outline" target="_blank" rel="noopener">案例展示</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 小帅在创作 · <a href="https://afdian.com" target="_blank">爱发电</a> · <a href="https://gumroad.com" target="_blank">Gumroad</a></p>
+            <p style="margin-top: 10px; opacity: 0.8;">发现更多创作工具与资源 → <a href="https://afdian.com/a/felix007" target="_blank">afdian.com/a/felix007</a></p>
+        </div>
+    </footer>
+</body>
+</html>
